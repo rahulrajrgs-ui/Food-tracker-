@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Healthy Food Tracker & BMI Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="favicon.png">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🥗 Healthy Food Tracker & BMI Calculator</h1>
+
+<button onclick="toggleDarkMode()">🌙 Toggle Mode</button>
+
+</header>
+
+
+<section class="tracker">
+
+<h2>Food Nutrition Calculator</h2>
+
+<input type="text" id="foodInput" placeholder="Enter food name">
+
+<input type="number" id="qtyInput" placeholder="Enter grams">
+
+<button onclick="calculateNutrition()">Calculate</button>
+
+<div id="result"></div>
+
+<img id="foodImage" src="images/default.jpg" width="150" alt="Food Image">
+
+</section>
+
+
+<section class="bmi">
+
+<h2>BMI Calculator</h2>
+
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<input type="number" id="height" placeholder="Height (cm)">
+
+<button onclick="calculateBMI()">Check BMI</button>
+
+<div id="bmiResult"></div>
+
+
+</section>
+
+
+<section class="history">
+
+<h2>Search History</h2>
+
+<ul id="historyList"></ul>
+
+<button onclick="clearHistory()">Clear History</button>
+
+</section>
+
+
+<section class="gallery">
+
+<h3>Healthy Foods</h3>
+
+<img src="images/apple.jpg" onclick="autoFill('apple')" alt="apple">
+<img src="images/banana.jpg" onclick="autoFill('banana')" alt="banana">
+<img src="images/milk.jpg" onclick="autoFill('milk')" alt="milk">
+<img src="images/egg.jpg" onclick="autoFill('egg')" alt="egg">
+<img src="images/rice.jpg" onclick="autoFill('rice')" alt="rice">
+<img src="images/carrot.jpg" onclick="autoFill('carrot')" alt="carrot">
+<img src="images/orange.jpg" onclick="autoFill('orange')" alt="orange">
+<img src="images/lentils.jpg" onclick="autoFill('lentils')" alt="lentiils">
+<img src="images/tomato.jpg" onclick="autoFill('tomato')" alt="tomato">
+<img src="images/wheat.jpg" onclick="autoFill('wheat')" alt="wheat">
+<img src="images/spinach.jpg" onclick="autoFill('spinach')" alt="spinach">
+<img src="images/almonds.jpg" onclick="autoFill('almonds')" alt="almonds">
+<img src="images/paneer.jpg" onclick="autoFill('paneer')" alt="paneer">
+<img src="images/walnuts.jpg" onclick="autoFill('walnuts')" alt="walnuts">
+<img src="images/tofu.jpg" onclick="autoFill('tofu')" alt="tofu">
+<img src="images/cheese.jpg" onclick="autoFill('cheese')" alt="cheese">
+<img src="images/fish.jpg" onclick="autoFill('fish')" alt="fish">
+<img src="images/prawn.jpg" onclick="autoFill('prawn')" alt="prawn">
+<img src="images/tuna.jpg" onclick="autoFill('tuna')" alt="tuna">
+<img src="images/chicken.jpg" onclick="autoFill('chicken')" alt="chicken">
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
