@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f5f7fa;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #2ecc71;
+    color: white;
+    padding: 20px;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    width: 200px;
+    max-width: 100%;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #219150;
+}
+
+/* Sections */
+section {
+    margin: 30px;
+}
+
+/* Gallery Images */
+.gallery img {
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Food Image */
+#foodImage {
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Dark Mode */
+.dark {
+    background: #222;
+    color: white;
+}
+
+/* BMI Colors */
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input {
+        width: 90%;
+        margin: 8px auto;
+        display: block;
+    }
+
+    button {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .gallery img {
+        width: 70px;
+    }
+
+    #foodImage {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    section {
+        margin: 15px;
+    }
+}
